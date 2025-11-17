@@ -1,0 +1,21 @@
+menu "ESP LCD Touch XPT2046"
+    config LCD_TOUCH_XPT2046_ENABLE_CALIBRATION
+        bool "Enable XPT2046 calibration"
+        default n
+        help
+            Enable calibration feature for XPT2046 touch controller.
+            
+    config LCD_TOUCH_XPT2046_SAMPLES
+        int "Number of samples for averaging"
+        default 3
+        range 1 10
+        help
+            Number of samples to average for better accuracy.
+            
+    config LCD_TOUCH_XPT2046_Z_THRESHOLD
+        int "Touch pressure threshold"
+        default 400
+        range 0 4095
+        help
+            Minimum pressure value to register a touch.
+endmenu

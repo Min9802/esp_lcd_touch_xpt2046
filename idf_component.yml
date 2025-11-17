@@ -1,0 +1,9 @@
+## IDF Component Manager Manifest File
+version: "1.0.0"
+description: ESP LCD Touch XPT2046 Driver
+url: https://github.com/Min9802/esp_lcd_touch_xpt2046
+dependencies:
+  espressif/esp_lcd_touch:
+    version: "^1.0.0"
+  idf:
+    version: ">=5.0.0"
